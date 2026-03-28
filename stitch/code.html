@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#c7c6c6",
+              "tertiary-fixed": "#e4e2e2",
+              "secondary-fixed-dim": "#c7c6c6",
+              "tertiary-container": "#a6a5a5",
+              "background": "#131313",
+              "on-error-container": "#ffdad6",
+              "tertiary": "#c8c6c6",
+              "on-tertiary-fixed": "#1b1c1c",
+              "surface-container-lowest": "#0e0e0e",
+              "primary-fixed": "#ffdea5",
+              "on-tertiary-fixed-variant": "#474747",
+              "inverse-primary": "#775a19",
+              "on-secondary-fixed-variant": "#464747",
+              "on-tertiary": "#303030",
+              "primary-fixed-dim": "#e9c176",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-primary-fixed-variant": "#5d4201",
+              "error": "#ffb4ab",
+              "surface-container": "#20201f",
+              "on-surface-variant": "#d1c5b4",
+              "on-primary-fixed": "#261900",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "outline": "#9a8f80",
+              "on-surface": "#e5e2e1",
+              "secondary-container": "#464747",
+              "primary": "#e9c176",
+              "on-background": "#e5e2e1",
+              "on-secondary-container": "#b5b5b5",
+              "on-primary-container": "#4e3700",
+              "outline-variant": "#4e4639",
+              "on-error": "#690005",
+              "surface-bright": "#393939",
+              "inverse-on-surface": "#313030",
+              "on-tertiary-container": "#3b3b3b",
+              "on-secondary": "#2f3131",
+              "on-primary": "#412d00",
+              "surface-container-low": "#1c1b1b",
+              "surface-dim": "#131313",
+              "surface-container-highest": "#353535",
+              "surface-variant": "#353535",
+              "secondary-fixed": "#e3e2e2",
+              "surface-tint": "#e9c176",
+              "inverse-surface": "#e5e2e1",
+              "primary-container": "#c5a059",
+              "surface": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(233, 193, 118, 0.3);
+        }
+        .linear-light {
+            background: linear-gradient(90deg, transparent 0%, #e9c176 50%, transparent 100%);
+            height: 1px;
+            width: 100px;
+            opacity: 0.6;
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 z-50 w-full glass-nav border-b border-white/5">
+<div class="flex justify-between items-center w-full px-8 md:px-12 py-6 max-w-[1920px] mx-auto">
+<div class="flex flex-col">
+<span class="text-2xl font-normal lowercase text-[#e5e2e1] tracking-tighter font-headline leading-none">deqoin</span>
+<span class="font-label text-[9px] tracking-[0.2em] uppercase text-primary/60 mt-1">Design Studio</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-headline tracking-wide text-sm">
+<a class="text-[#e9c176] border-b border-[#e9c176]/40 pb-1 hover:text-[#e9c176] transition-colors duration-500" href="#">Mimari</a>
+<a class="text-[#e5e2e1]/70 hover:text-[#e9c176] transition-colors duration-500" href="#">Tasarım</a>
+<a class="text-[#e5e2e1]/70 hover:text-[#e9c176] transition-colors duration-500" href="#">Uygulama</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary/80 cursor-pointer hover:text-primary transition-all duration-300">account_circle</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="relative min-h-screen flex flex-col justify-center items-center px-6 overflow-hidden">
+<!-- Background Texture & Ambient Light -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]"></div>
+<div class="w-full h-full opacity-20 grayscale bg-cover bg-center" data-alt="Close-up of high-end dark architectural concrete texture with subtle shadows and minimalist aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBogqwpx7wvYE_fPPf7UYvbTc9OBImc0QJ8fGL6WUUrsk6G2MLOz6yUHDt2fCoFxUHVRfhJGRLhEbpSPArA5ymne00kLz_olgx2cbNeRUHejQJ6OFsJLKD1S110YwDjdvL0ylOsW6NR1oVSdZRhuHsAimivTMaUzb8rULhMTcOrIktVnx70fvKo1i5X6tLuZbVw-AjUL1tncC_zQ3AUp3MfQmWVtMC35MwSg3wyS17lFqJMHYi3OpFnrgOzlqZSuRZDRkuDPX6jZiY')"></div>
+</div>
+<!-- Content Overlay -->
+<div class="relative z-10 text-center max-w-4xl">
+<div class="flex flex-col items-center mb-12">
+<div class="linear-light mb-8"></div>
+<h1 class="font-headline text-5xl md:text-8xl tracking-tight text-on-surface mb-8 opacity-90">
+                    Çok Yakında
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed font-light tracking-wide">
+                    Zamansız mekânlar için yeni bir deneyim hazırlanıyor.
+                </p>
+</div>
+<!-- Architectural CTA Detail -->
+<div class="inline-flex items-center gap-4 group cursor-pointer py-4">
+<div class="h-[1px] w-12 bg-primary/40 group-hover:w-20 transition-all duration-700"></div>
+<span class="font-label text-xs uppercase tracking-[0.3em] text-primary group-hover:tracking-[0.4em] transition-all duration-700">Bize Katılın</span>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface/30">Keşfet</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary/60 to-transparent"></div>
+</div>
+</main>
+<!-- About Section (Bento Inspired Asymmetric) -->
+<section class="py-32 px-8 md:px-24 bg-surface-container-lowest relative">
+<div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<!-- Big Image (Floating Aesthetic) -->
+<div class="md:col-span-7 relative h-[600px] w-full group overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-[2000ms]" data-alt="Interior shot of a luxury minimalist living room with matte dark walls, bronze accents, and warm architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5RDQTidaX8sY_5ZGDUCLnEJNZL-7RWQiymGwN5mu9Hcb7W3Iv5KEv-5u09jACk6c4Lc4BPpLm0VVOiKr1xBQwq4_jqOc7y7jH1cNaqepgiaUnSB5bVwMXeSu7B589prUrU1Q1vTIjI6s62s_i1oFGHiQ602bUl-ASSfLybPhKQoEhXXdsLogWxB2jgJjd2e70Df3GorS5SvbvqdArfvtZLsP18JErsJC0cTs-3mBfWQAqFA6c1e8TBL31NaeDEw_5MOvbnyqD0u0"/>
+<div class="absolute inset-0 border-[20px] border-surface-container-lowest/20 pointer-events-none"></div>
+</div>
+<!-- Text Content -->
+<div class="md:col-span-5 flex flex-col justify-center">
+<h2 class="font-headline text-3xl md:text-5xl text-on-surface mb-8 leading-tight">
+                    Fikirlerden <br/><span class="text-primary italic font-light">Gerçekliğe.</span>
+</h2>
+<p class="font-body text-on-surface-variant/80 text-lg leading-relaxed mb-10 font-light">
+                    deqoin, iç mimarlık, dekorasyon ve uygulama alanlarında bütüncül çözümler sunan bir tasarım stüdyosudur. Estetik, fonksiyon ve kaliteyi bir araya getirerek özgün mekânlar üretir.
+                </p>
+<div class="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant/20">
+<div>
+<span class="font-label text-primary text-[10px] uppercase tracking-widest block mb-2">Vizyon</span>
+<p class="text-sm text-on-surface/60 font-light">Mekânın ruhunu modern çizgilerle harmanlayarak zamansız eserler bırakmak.</p>
+</div>
+<div>
+<span class="font-label text-primary text-[10px] uppercase tracking-widest block mb-2">Misyon</span>
+<p class="text-sm text-on-surface/60 font-light">Maksimum konfor ve estetiği en küçük detayda dahi hissettirmek.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid (Minimal List) -->
+<section class="py-32 px-8 md:px-24 bg-surface">
+<div class="max-w-[1400px] mx-auto">
+<div class="flex justify-between items-end mb-20">
+<h3 class="font-headline text-4xl text-on-surface">Hizmetlerimiz</h3>
+<div class="linear-light hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/20">
+<!-- Service 01 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-all duration-500 group">
+<span class="font-label text-primary/30 text-4xl block mb-12 group-hover:text-primary/60 transition-colors">01</span>
+<h4 class="font-headline text-2xl mb-6">Mimari Tasarım</h4>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed opacity-60">Yapısal estetiği ve fonksiyonelliği birleştiren özgün projeler.</p>
+</div>
+<!-- Service 02 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-all duration-500 group">
+<span class="font-label text-primary/30 text-4xl block mb-12 group-hover:text-primary/60 transition-colors">02</span>
+<h4 class="font-headline text-2xl mb-6">İç Mekan Çözümleri</h4>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed opacity-60">Detaylarla zenginleşen, yaşayan ve nefes alan iç hacimler.</p>
+</div>
+<!-- Service 03 -->
+<div class="bg-surface p-12 hover:bg-surface-container-low transition-all duration-500 group">
+<span class="font-label text-primary/30 text-4xl block mb-12 group-hover:text-primary/60 transition-colors">03</span>
+<h4 class="font-headline text-2xl mb-6">Uygulama &amp; Kontrol</h4>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed opacity-60">Proje aşamasından anahtar teslimine titiz şantiye yönetimi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Footer Section -->
+<footer class="bg-surface-container-lowest pt-24 pb-12 border-t border-white/5">
+<div class="max-w-[1400px] mx-auto px-8 md:px-24">
+<div class="flex flex-col md:flex-row justify-between items-start gap-16 mb-24">
+<!-- Brand Detail -->
+<div class="max-w-xs">
+<h2 class="text-3xl font-headline lowercase text-on-surface mb-6 tracking-tighter">deqoin</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed">Kapadokya'nın mistik dokusunu modern tasarımla buluşturuyoruz.</p>
+</div>
+<!-- Contact Info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+<div>
+<span class="font-label text-primary text-[10px] uppercase tracking-[0.2em] block mb-6">İletişim</span>
+<ul class="space-y-4 font-body text-lg">
+<li><a class="hover:text-primary transition-colors duration-300" href="mailto:info@deqoin.com">info@deqoin.com</a></li>
+<li class="text-on-surface-variant">Nevşehir / Kapadokya</li>
+</ul>
+</div>
+<div>
+<span class="font-label text-primary text-[10px] uppercase tracking-[0.2em] block mb-6">Sosyal Medya</span>
+<ul class="space-y-4 font-body text-lg">
+<li>
+<a class="flex items-center gap-3 hover:text-primary transition-colors duration-300 group" href="#">
+<span>Instagram</span>
+<span class="material-symbols-outlined text-sm opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all">arrow_outward</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Bottom Bar from JSON -->
+<div class="flex flex-col md:flex-row justify-between items-center w-full pt-12 border-t border-white/5 gap-6">
+<span class="font-label text-[10px] tracking-[0.05em] uppercase text-on-surface/40">© deqoin Design Studio. Nevşehir / Kapadokya</span>
+<div class="flex gap-8">
+<a class="font-label text-[10px] tracking-[0.05em] uppercase text-on-surface/40 hover:text-primary transition-colors duration-500" href="#">Instagram</a>
+<a class="font-label text-[10px] tracking-[0.05em] uppercase text-on-surface/40 hover:text-primary transition-colors duration-500" href="mailto:info@deqoin.com">info@deqoin.com</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating UI Detail: Bottom Fixed Contact Line -->
+<div class="fixed bottom-0 left-0 w-full h-1 z-50 overflow-hidden pointer-events-none">
+<div class="w-full h-full bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</div>
+</body></html>
