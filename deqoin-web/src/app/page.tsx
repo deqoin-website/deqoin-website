@@ -7,9 +7,13 @@ export default function Home() {
       <nav className="fixed top-0 z-50 w-full glass-nav border-b border-white/5">
         <div className="flex justify-between items-center w-full px-8 md:px-12 py-6 max-w-[1920px] mx-auto">
           <div className="flex flex-col">
-            <span className="text-2xl font-normal lowercase text-[#e5e2e1] tracking-tighter font-headline leading-none">
-              deqoin
-            </span>
+            <Image
+              src="/logo.png"
+              alt="deqoin logo"
+              width={120}
+              height={40}
+              className="object-contain"
+            />
             <span className="font-label text-[9px] tracking-[0.2em] uppercase text-primary/60 mt-1">
               Design Studio
             </span>
@@ -189,9 +193,15 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start gap-16 mb-24">
             {/* Brand Detail */}
             <div className="max-w-xs">
-              <h2 className="text-3xl font-headline lowercase text-on-surface mb-6 tracking-tighter">
-                deqoin
-              </h2>
+              <div className="mb-6">
+                <Image
+                  src="/logo.png"
+                  alt="deqoin logo"
+                  width={140}
+                  height={48}
+                  className="object-contain"
+                />
+              </div>
               <p className="font-body text-sm text-on-surface-variant/70 leading-relaxed">
                 Kapadokya'nın mistik dokusunu modern tasarımla buluşturuyoruz.
               </p>
