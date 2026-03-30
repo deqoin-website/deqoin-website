@@ -14,8 +14,8 @@ export default function Home() {
               height={40}
               className="object-contain"
             />
-            <span className="font-label text-[9px] tracking-[0.2em] uppercase text-primary/60 mt-1">
-              Design Studio
+            <span className="font-label text-[9px] tracking-[0.2em] uppercase text-[#8b1a1a] mt-1">
+              Desıgn Studio
             </span>
           </div>
           <div className="hidden md:flex items-center gap-10 font-headline tracking-wide text-sm">
