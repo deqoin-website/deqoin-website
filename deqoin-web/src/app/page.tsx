@@ -38,10 +38,7 @@ export default function Home() {
               Uygulama
             </a>
           </div>
-          <div className="flex items-center gap-6">
-            <span className="material-symbols-outlined text-primary/80 cursor-pointer hover:text-primary transition-all duration-300">
-              account_circle
-            </span>
+          <div className="flex items-center gap-6 w-[24px]">
           </div>
         </div>
       </nav>
@@ -66,11 +63,11 @@ export default function Home() {
         <div className="relative z-10 text-center max-w-4xl">
           <div className="flex flex-col items-center mb-12">
             <div className="linear-light mb-8"></div>
-            <h1 className="font-headline text-5xl md:text-8xl tracking-tight text-on-surface mb-8 opacity-90">
-              Çok Yakında
+            <h1 className="font-headline text-3xl md:text-6xl tracking-tight text-on-surface mb-8 opacity-90">
+              Web Sitemiz Yenileniyor
             </h1>
             <p className="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed font-light tracking-wide">
-              Zamansız mekânlar için yeni bir deneyim hazırlanıyor.
+              Stüdyomuz çalışmalarına hız kesmeden devam etmektedir. Çok yakında yeni dijital yüzümüzle karşınızda olacağız.
             </p>
           </div>
 
@@ -235,7 +232,9 @@ export default function Home() {
                   <li>
                     <a
                       className="flex items-center gap-3 hover:text-primary transition-colors duration-300 group"
-                      href="#"
+                      href="https://instagram.com/deqoin/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <span>Instagram</span>
                       <span className="material-symbols-outlined text-sm opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
@@ -256,12 +255,14 @@ export default function Home() {
             <div className="flex gap-8">
               <a
                 className="font-label text-[10px] tracking-[0.05em] uppercase text-on-surface/40 hover:text-primary transition-colors duration-500"
-                href="#"
+                href="https://instagram.com/deqoin/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
               </a>
               <a
-                className="font-label text-[10px] tracking-[0.05em] uppercase text-on-surface/40 hover:text-primary transition-colors duration-500"
+                className="font-label text-[10px] tracking-[0.08em] lowercase text-on-surface/40 hover:text-primary transition-colors duration-500"
                 href="mailto:info@deqoin.com"
               >
                 info@deqoin.com
