@@ -213,8 +213,9 @@ export default function Home() {
                       info@deqoin.com
                     </a>
                   </li>
-                  <li className="text-on-surface-variant">
-                    Nevşehir / Kapadokya
+                  <li className="text-on-surface-variant text-sm leading-relaxed max-w-[240px]">
+                    350 Evler Mah. Ali Dirikoç Blv. Sena Apartmanı No:13 İç Kapı No: Z01
+                    Merkez / Nevşehir
                   </li>
                 </ul>
               </div>
