@@ -71,13 +71,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Architectural CTA Detail */}
-          <div className="inline-flex items-center gap-4 group cursor-pointer py-4">
-            <div className="h-[1px] w-12 bg-primary/40 group-hover:w-20 transition-all duration-700"></div>
-            <span className="font-label text-xs uppercase tracking-[0.3em] text-primary group-hover:tracking-[0.4em] transition-all duration-700">
-              Bize Katılın
-            </span>
-          </div>
+
         </div>
 
         {/* Scroll Indicator */}
